@@ -9,7 +9,7 @@ Package
 
 install bootstrap: $ npm install -g @angular/cli
   - $ npm install bootstrap
-  - $ npm install jqueryCancel changes
+  - $ npm install jquery
   - Register it on angular.json
     "style":[ "node_modules/bootstrap/dist/css/bootstrap.min.css"]
     "script":[ "node_modules/jquery/dist/jquery.min.js"]
