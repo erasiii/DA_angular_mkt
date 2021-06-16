@@ -1,0 +1,77 @@
+<div class="breadcrumb-section set-bg" data-setbg="assets/images/breadcrumb.jpg" style="background-image: url('assets/images/breadcrumb.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb__text">
+          <h2>Shop</h2>
+          <div class="breadcrumb__option">
+            <a href="">Home</a>
+            <span>- Shop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="product__categories">
+          <div class="product__categories__all">
+            <i class="fas fa-bars"></i>
+            <span>All category</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="product__categories__list">
+            <ul>
+              <li><a href="/product">iPhone 12</a></li>
+              <li><a href="/product">iPhone 11</a></li>
+              <li><a href="/product">iPhone X</a></li>
+              <li><a href="/product">iPhone 8</a></li>
+              <li><a href="/product">iPhone 7</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="product-menu__title">
+          <h3>Product</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" *ngFor="let product of product">
+            <div class="product-item">
+              <div class="product-item__pic">
+                <a [routerLink]="['product-detail']">
+                  <img [src]="product.img" [alt]="product.name">
+                </a>
+              </div>
+              <div class="product-item__text">
+                  <div class="product-item__title">
+                    <p><a href="#">{{product.name}}</a></p>
+                    <h5>${{product.price}}</h5>
+                  </div>
+                  <div class="product-item__button">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="product-pagination">
+              <a href="/product">1</a>
+              <a href="/product">2</a>
+              <a href="/product">3</a>
+              <a href="/product">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

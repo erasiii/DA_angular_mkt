@@ -1,0 +1,121 @@
+<!-- <app-header></app-header> -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="hero__categories">
+          <div class="hero__categories__all">
+            <i class="fas fa-bars"></i>
+            <span>All category</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <ul>
+            <li><a href="/product">iPhone 12</a></li>
+            <li><a href="/product">iPhone 11</a></li>
+            <li><a href="/product">iPhone X</a></li>
+            <li><a href="/product">iPhone 8</a></li>
+            <li><a href="/product">iPhone 7</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="hero__item set-bg" data-setbg="assets/images/banner.jpg"
+          style="background-image: url('assets/images/banner.jpg');">
+          <div class="hero__text">
+            <span>iPhone 12 Pro Max</span>
+            <h2 style="color: aliceblue;">
+              The ultimate <br> iPhone
+            </h2>
+            <p>Avaiable from 13th November</p>
+            <a [routerLink]="['/product']" class="primary-btn">SHOP NOW</a>
+            <!-- <a routerLink="/about.html"class="primary-btn" >SHOP NOW</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topproduct">
+  <div class="container">
+    <div class="topproduct__title">
+      <h2>Top Product</h2>
+    </div>
+    <div class="topproduct__menu">
+      <owl-carousel-o [options]="customOptions">
+
+        <ng-template carouselSlide>
+          <div class="topproduct__item">
+            <div class="topproduct__item-img">
+              <img src="assets/images/product/product-6.jpg" alt="">
+            </div>
+            <div class="topproduct__item-text">
+              <div class="topproduct__item-title">
+                <p><a href="#">iPhone 12 Pro Max - Pacific Blue</a></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="topproduct__item">
+            <div class="topproduct__item-img">
+              <img src="assets/images/product/product-8.jpg" alt="">
+            </div>
+            <div class="topproduct__item-text">
+              <div class="topproduct__item-title">
+                <p><a href="#">iPhone 12 Pro Max - Gold</a></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="topproduct__item">
+            <div class="topproduct__item-img">
+              <img src="assets/images/product/product-11.jpg" alt="">
+            </div>
+            <div class="topproduct__item-text">
+              <div class="topproduct__item-title">
+                <p><a href="#">iPhone 12 Pro Max - Graphite</a></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="topproduct__item">
+            <div class="topproduct__item-img">
+              <img src="assets/images/product/product-1.jpg" alt="">
+            </div>
+            <div class="topproduct__item-text">
+              <div class="topproduct__item-title">
+                <p><a href="#">iPhone 12 Pro Max - Silver</a></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="banner-img">
+          <img src="assets/images/banner-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="banner-img">
+          <img src="assets/images/banner-2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="owl-carousel">
+
+</section>
+
+<!-- <app-footer></app-footer> -->

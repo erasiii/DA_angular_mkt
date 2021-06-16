@@ -1,0 +1,59 @@
+<div id="header-top">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 header-top-left">
+            <li>
+              <i class="fas fa-envelope"></i>
+              sinhvien@huflit.com
+            </li>
+            <li>Free Shipping for all Order of $99</li>
+        </div>
+        <div class="col-lg-6 header-top-right">
+            <div class="social-media-header">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="login-header">
+                <a [routerLink]="['/login']" >
+                    <i class="fas fa-user"></i>
+                    Login
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="header" class="header">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a [routerLink]="['']" ><img src="assets/images/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="header__menu">
+            <ul>
+              <li><a [routerLink]="['/index']" routerLinkActive="actived"
+                [routerLinkActiveOptions] ="{exact: true}" >Home</a></li>
+              <li><a [routerLink]="['/about']" routerLinkActive="actived">About</a></li>
+              <li><a [routerLink]="['/product']" routerLinkActive="actived">Shop</a></li>
+              <li><a [routerLink]="['/contact']" routerLinkActive="actived">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+              <li>
+                <a [routerLink]="['/cart']">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>1</span>
+                </a>
+              </li>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
