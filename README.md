@@ -9,14 +9,14 @@ Package
 
 install bootstrap: $ npm install -g @angular/cli
   - $ npm install bootstrap
-  - $ npm install jquery
-  Register it on angular.json
+  - $ npm install jqueryCancel changes
+Register it on angular.json
     "style":[ "node_modules/bootstrap/dist/css/bootstrap.min.css"]
     "script":[ "node_modules/jquery/dist/jquery.min.js"]
 
 install FontAwesome: 
   - npm install @fortawesome/fontawesome-free --save
-  Register it on angular.json
+Register it on angular.json
     "style":["node_modules/@fortawesome/fontawesome-free/css/all.min.css"]
     
  install OwlCarousel:
